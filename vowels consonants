@@ -1,0 +1,49 @@
+import java.util.*;
+import java.io.*;
+
+public class Main {
+  public static void main(String args[]) throws IOException {
+    
+    //write your code here
+    Scanner sc = new Scanner(System.in);
+   
+    int T = sc.nextInt();
+    
+    while(T-- > 0){
+      
+     
+     String str[] = new String[T];
+      
+      
+      
+      for(int i=0; i < T;i++){
+        str[i]=sc.nextLine();
+      }
+      
+      
+      
+      for(int i = 0 ; i < str.length; i++){
+        
+        String strin = str[i];
+        
+          int  countvowel = 0;
+          int countcons = 0;
+        
+        
+        
+        for(int j=0 ; j < strin.length();j++){
+        
+        char ch = strin.charAt(j);
+       
+        
+        if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+        countvowel = countvowel + 1;
+        else
+        countcons = countcons + 1;
+      }
+    
+    System.out.println(countvowel + " " + countcons);
+      }
+    }
+  }
+}
