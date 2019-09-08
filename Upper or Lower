@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		// Write your code here
+        Scanner sc = new Scanner(System.in);
+        char ch = sc.next().charAt(0);
+        int charint = ch;
+        
+        if(ch >= 65 && ch <=90)
+            System.out.println("1");
+        else if(ch >=97 && ch<=90)
+            System.out.println("0");
+        else 
+            System.out.println("-1");
+	}
+}
