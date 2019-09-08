@@ -10,7 +10,8 @@ public class Main {
     
     while(T-- > 0){
       
-      String str = sc.nextLine();
+      String str = sc.next();//ok after nextInt if we use nextLine() directly, than it takes space or new line character as input sometime
+in this case you do not need nextLine()
       
       int countvowel=0,countconsonant=0;
      
