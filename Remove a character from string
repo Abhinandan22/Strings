@@ -15,4 +15,28 @@ int j, count = 0, n = input.length();
     } 
       
     return String.valueOf(t);
+    
+    
+    If charArray doesnot work
+    
+    
+    int j, count = 0, n = input.length(); 
+   
+        String t=input;
+        String ans="";
+    for (int i = j = 0; i < n; i++) 
+    { 
+        
+        if(t.charAt(i)!=c)
+        {
+            ans+=t.charAt(i);
+        }
+        else
+            count++;
+    } 
+      
+     
+      
+    
+       return ans; 
         
