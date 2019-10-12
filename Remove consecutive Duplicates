@@ -1,0 +1,29 @@
+ 
+ String input = "aaaeedgff";
+ 
+ char ch[] = input.toCharArray();
+        
+        int n = ch.length;
+        
+        input=" ";
+        
+        
+        for(int i = 0 ; i < n ; i++){
+            
+            input=input+ch[i];
+            
+            for(int j = i+1 ; j<n;j++){
+                
+                if(ch[i]!=' '&&(ch[i]==ch[j]||ch[i]==ch[j]+32||ch[i]==ch[j]-32)){
+                    
+                    for(int k=j ; k <n-1;k++){
+                        ch[k]=ch[k+1];
+                    }
+                n--;
+                j--;
+                
+                }
+            }
+        }
+        return String.valueOf(input);
+        
